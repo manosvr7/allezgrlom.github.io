@@ -13,6 +13,7 @@
         body {
             background-color: black;
         }
+		/*
         .btn {
             background: #3498db;
             background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -38,13 +39,55 @@
             background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
             background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
             text-decoration: none;
-}
+} */
+
+		.btn2 {
+			color: white;
+		}
+
+		.btn2:hover {
+			color: white;
+			text-decoration: underline;
+		}
+
         .player {
             margin-top:15px;
             margin-left: 0em;
             margin-right: 0em;
             height: 50em;
         }
+
+		.styled-table {
+           border-collapse: collapse;
+    	   margin: 0px 0;
+    	   font-size: 0.9em;
+    	   font-family: sans-serif;
+    	   min-width: 400px;
+    	   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   		}
+		
+		.styled-table thead tr {
+    	   background-color: #3498db;
+    	   color: #ffffff;
+    	   text-align: left;
+		}
+
+		.styled-table th,
+		.styled-table td {
+    	   padding: 12px 15px;
+		}
+
+		.styled-table tbody tr {
+    	   border-bottom: 1px solid #3498db;
+	    }
+
+		.styled-table tbody tr:nth-of-type(even) {
+    	   background-color: #3498db;
+		}
+
+		.styled-table tbody tr:last-of-type {
+    	   border-bottom: 2px solid #3498db;
+		}
     </style>
 		
 		
@@ -76,21 +119,41 @@
 					<div id="content" >
 					    <iframe class="player" id="streamIframe" name="streamframe" width='100%' height='100%' allowfullscreen='yes' marginwidth='0' marginheight='0' scrolling='no' src='https://greeklivechannels.com/link11.html' frameborder='0' allow='encrypted-media'></iframe>
                         <p class='buttons' style='margin-top:30px; padding: 18px;'>
-                        	
-							<a class="btn" href='https://greeklivechannels.com/link11.html' target='streamframe' rel='nofollow'>Τσέλσι - Μάντσεστερ Σίτι</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link4m.html' target='streamframe' rel='nofollow'>Τσέλσι - Μάντσεστερ Σίτι</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link11.html' target='streamframe' rel='nofollow'>Λέστερ - Μπέρνλι</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link4m.html' target='streamframe' rel='nofollow'>Λέστερ - Μπέρνλι</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link11.html' target='streamframe' rel='nofollow'>Μπρέντφορντ - Λίβερπουλ</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link4m.html' target='streamframe' rel='nofollow'>Μπρέντφορντ - Λίβερπουλ</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link11.html' target='streamframe' rel='nofollow'>Παρί Σεν Ζερμέν - Μονπελιέ</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link4m.html' target='streamframe' rel='nofollow'>Παρί Σεν Ζερμέν - Μονπελιέ</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link12.html' target='streamframe' rel='nofollow'>Μάντσεστερ Γιουνάιτεντ - Άστον Βίλα</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link5m.html' target='streamframe' rel='nofollow'>Μάντσεστερ Γιουνάιτεντ - Άστον Βίλα</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link12.html' target='streamframe' rel='nofollow'>Ίντερ - Αταλάντα</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link5m.html' target='streamframe' rel='nofollow'>Ίντερ - Αταλάντα</a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link12.html' target='streamframe' rel='nofollow'>Ρεάλ Μαδρίτης - Βιγιαρεάλ </a> <br>
-							<a class="btn" href='https://greeklivechannels.com/link5m.html' target='streamframe' rel='nofollow'>Ρεάλ Μαδρίτης - Βιγιαρεάλ </a> <br>
+
+							<table class="styled-table">
+								<thead>
+									<tr>
+										<th>Αγώνας</th>
+										<th>Ώρα</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a class="btn2" href='https://greeklivechannels.com/link12.html' target='streamframe' rel='nofollow'>Ίντερ - Αταλάντα</a></td>
+										<td>19:00</td>
+									</tr>
+									<tr>
+										<td><a class="btn2" href='https://greeklivechannels.com/link11.html' target='streamframe' rel='nofollow'>Μπρέντφορντ - Λίβερπουλ</a></td>
+										<td>19:30</td>
+									</tr>
+									<tr>
+										<td><a class="btn2" href='https://greeklivechannels.com/link11.html' target='streamframe' rel='nofollow'>Παρί Σεν Ζερμέν - Μονπελιέ</a></td>
+										<td>22:00</td>
+									</tr>
+									<tr>
+										<td><a class="btn2" href='https://greeklivechannels.com/link12.html' target='streamframe' rel='nofollow'>Ρεάλ Μαδρίτης - Βιγιαρεάλ </a></td>
+										<td>22:00</td>
+									</tr>
+									<tr>
+										<td><a class="btn2" href='http://www.ee1061360223528.pw/en/player/6b55c9de76077f24a4dd247739b1fa2a6aff3ad0074b9c2d8f209e2770e20b08713e6dc56dcd229b189a7eaf58f284c436806952961c8eb0ee5a685252a50248/614f4c98df9ed' target='streamframe' rel='nofollow'>Anthony Joshua vs Oleksandr Usyk</a></td>
+										<td>21:00</td>
+									</tr>
+									<tr>
+										<td><a class="btn2" href='http://www.ee1061360223528.pw/en/player/a01604d4b292ad9fdf63c586cc74a48266952f948360d5a5861ed08a363ff7f7682f9b3067551aa37454404c086fc81252ff7014272ca729698b8b9d21dc52eb/614f4d6f2eb56' target='streamframe' rel='nofollow'>Brian Ortega vs Alexander Volkanovski</a></td>
+										<td>01:00</td>
+									</tr>
+								</tbody>
+							</table>
 							
 
 				    </div>
