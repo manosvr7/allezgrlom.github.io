@@ -65,6 +65,10 @@
 		#links {
 			text-align: center;
 		}
+
+		#twitch-embed {
+			margin-top: 100px;
+		}
     </style>
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -91,6 +95,10 @@
             <div class="container">
 				<center> 
 				<div id="content" >
+				
+					<div id="twitch-embed"></div>
+					
+					<iframe src="https://player.twitch.tv/?channel=zlq1999&parent=manosvr7.github.io/allezgrlom.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 					<iframe class="player" id="streamIframe" name="streamframe" width='100%' height='100%' allowfullscreen='yes' marginwidth='0' marginheight='0' scrolling='no' src='https://greeklivechannels.com/link11.html' frameborder='0' allow='encrypted-media'></iframe>					
 					<table class="styled-table">
 						<thead>
@@ -118,5 +126,14 @@
 	<script src="https://cdn2.greeklivechannels.com/js/respond.min.js"></script>
 	<script src="https://cdn2.greeklivechannels.com/js/html5shiv.js"></script>
 	<script src="https://cdn2.greeklivechannels.com/js/custom.js"></script>
+	<!-- Load the Twitch embed script -->
+	<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+	<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+	<script type="text/javascript">
+	new Twitch.Player("twitch-embed", {
+		channel: "zlq1999"
+	});
+	</script>
 	</body>		
 </html>
