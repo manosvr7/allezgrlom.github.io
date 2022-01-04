@@ -1,24 +1,61 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> My Site </title>
-		
-		<link href="https://cdn.greeklivechannels.cyou/css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdn.greeklivechannels.cyou/css/font-awesome.min.css" rel="stylesheet">		
-		<link href="https://cdn.greeklivechannels.cyou/css/style.css" rel="stylesheet">
-		
-	<style>
-        body {
-            background-color: black;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Ελληνικά Κανάλια</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://cdn.greeklivechannels.cyou/css/font-awesome.min.css" rel="stylesheet">		
+    <!-- <link href="https://cdn.greeklivechannels.cyou/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.greeklivechannels.cyou/css/style.css" rel="stylesheet"> -->
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
+      }
+
+		.btn1 {
+			color: #343a40;
+		}
+
+		.btn1:hover {
+			color: #343a40;
+			text-decoration: underline;
+		}
+
 		.btn2 {
-			color: white;
+			color: #ffffff;
 		}
 
 		.btn2:hover {
-			color: white;
+			color: #ffffff;
 			text-decoration: underline;
 		}
 
@@ -40,7 +77,7 @@
    		}
 		
 		.styled-table thead tr {
-    	   background-color: #3498db;
+    	   background-color: #343a40;
     	   color: #ffffff;
     	   text-align: left;
 		}
@@ -51,81 +88,432 @@
 		}
 
 		.styled-table tbody tr {
-    	   border-bottom: 1px solid #3498db;
+    	   border-bottom: 1px solid #343a40;
 	    }
 
 		.styled-table tbody tr:nth-of-type(even) {
-    	   background-color: #3498db;
+    	   background-color: #343a40;
 		}
 
 		.styled-table tbody tr:last-of-type {
-    	   border-bottom: 2px solid #3498db;
+    	   border-bottom: 2px solid #343a40;
 		}
 
 		#links {
 			text-align: center;
 		}
-    </style>
-		
-		
-		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-		<link rel="manifest" href="favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#000000">
-		<script id="_wauxsf">var _wau = _wau || []; _wau.push(["classic", "ibe1sh594t", "xsf"]);</script><script async src="//waust.at/c.js"></script>
-		
-	</head>
-	
-	<body>
-		<main>
-            <div class="container">
-				<center> 
-					<div id="content">
-						<!-- <iframe class="player" id="streamIframe" src='https://embedstream.me/the-golazo-show-stream-1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url'></iframe> -->
-						<iframe class="player" id="streamIframe" name="streamframe" width='100%' height='100%' allowfullscreen='yes' marginwidth='0' marginheight='0' scrolling='no' src='https://greeklivechannels.cyou/link1.html' frameborder='0' allow='encrypted-media'></iframe>
-							<table class="styled-table">
-								<thead>
-									<tr>
-										<th>Αγώνες</th>
-										<th>Ώρα</th>
-										<th>Links</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><a class="btn2" href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>ΠΑΣ Γιάννινα - Ιωνικός</a></td>
-										<td>17:15</td>
-										<td><a class="btn2" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn2" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn2" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn2" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5</a></td>
-									</tr>
-									<tr>
-										<td><a class="btn2" href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>Αστέρας Τρίπολης - ΟΦΗ</a></td>
-										<td>19:30</td>
-										<td><a class="btn2" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn2" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn2" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn2" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5</a></td>
-									</tr>
-								</tbody>
-							</table>
-				    </div>
-                </center>
- 			</div>
-		</main>
-	<script src="https://cdn2.greeklivechannels.cyou/js/jquery.js"></script>
-	<script src="https://cdn2.greeklivechannels.cyou/js/bootstrap.min.js"></script>
-	<script src="https://cdn2.greeklivechannels.cyou/js/respond.min.js"></script>
-	<script src="https://cdn2.greeklivechannels.cyou/js/html5shiv.js"></script>
-	<script src="https://cdn2.greeklivechannels.cyou/js/custom.js"></script>
 
-	</body>		
+        footer {
+            background-color: #343a40;
+        }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Δωρεάν ελληνικά κανάλια και αγώνες.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Ελληνικά Κανάλια</h1>
+        <p class="lead text-muted">Δωρεάν ελληνικά κανάλια και αγώνες.</p>
+        
+        <p>
+          <a href="#channels" class="btn btn-primary my-2">Κανάλια</a>
+          <a href="#matches" class="btn btn-secondary my-2">Αγώνες</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div id="channels" class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">ΕΡΤ 1</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video2" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">ΕΡΤ 2</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video3" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">ΕΡΤ 3</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video4" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">MEGA</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video5" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">ANT1</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video6" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">ALPHA</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <video id="video7" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">STAR</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video8" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">SKAI</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+          <video id="video9" width="100%" height="70%" controls></video>
+            <div class="card-body">
+              <p class="card-text">OPEN</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm">
+              <video id="video10" width="100%" height="70%" controls></video>
+              <div class="card-body">
+                <p class="card-text">Μακεδονία TV</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="matches" class="container">
+    <center> 
+        <div id="content">
+            <!-- <iframe class="player" id="streamIframe" src='https://embedstream.me/the-golazo-show-stream-1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url'></iframe> -->
+            <iframe class="player" id="streamIframe" name="streamframe" width='100%' height='400' allowfullscreen='yes' marginwidth='0' marginheight='0' scrolling='no' src='https://greeklivechannels.cyou/link1.html' frameborder='0' allow='encrypted-media'></iframe>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Αγώνες</th>
+                            <th>Ώρα</th>
+                            <th>Links</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a class="btn1" href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>ΠΑΣ Γιάννινα - Ιωνικός</a></td>
+                            <td class="btn1">17:15</td>
+                            <td><a class="btn1" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn1" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn1" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn1" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5</a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="btn2" href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>Αστέρας Τρίπολης - ΟΦΗ</a></td>
+                            <td class="btn2">19:30</td>
+                            <td><a class="btn2" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn2" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn2" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn2" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </center>
+ </div>
+</main>
+<br>
+
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a class="btn2" href="#">Back to top</a>
+    </p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  //ERT1
+  if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('http://ert-live-bcbs15228.siliconweb.com/media/ert_1/ert_1_3Mbps.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'http://ert-live-bcbs15228.siliconweb.com/media/ert_1/ert_1_3Mbps.m3u8';
+    video.addEventListener('canplay',function() {
+      video.play();
+    });
+  }
+
+  //ERT2
+  if(Hls.isSupported()) {
+    var video2 = document.getElementById('video2');
+    var hls2 = new Hls();
+    hls2.loadSource('http://ert-live-bcbs15228.siliconweb.com/media/ert_2/ert_2_3Mbps.m3u8');
+    hls2.attachMedia(video2);
+    hls2.on(Hls.Events.MANIFEST_PARSED,function() {
+      video2.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video2.canPlayType('application/vnd.apple.mpegurl')) {
+    video2.src = 'http://ert-live-bcbs15228.siliconweb.com/media/ert_2/ert_2_3Mbps.m3u8';
+    video2.addEventListener('canplay',function() {
+      video2.play();
+    });
+  }
+
+  //ERT3
+  if(Hls.isSupported()) {
+    var video3 = document.getElementById('video3');
+    var hls3 = new Hls();
+    hls3.loadSource('http://ert-live-bcbs15228.siliconweb.com/media/ert_3/ert_3_2Mbps.m3u8');
+    hls3.attachMedia(video3);
+    hls3.on(Hls.Events.MANIFEST_PARSED,function() {
+      video3.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video3.canPlayType('application/vnd.apple.mpegurl')) {
+    video3.src = 'http://ert-live-bcbs15228.siliconweb.com/media/ert_3/ert_3_2Mbps.m3u8';
+    video3.addEventListener('canplay',function() {
+      video3.play();
+    });
+  }
+
+  //MEGA
+  if(Hls.isSupported()) {
+    var video4 = document.getElementById('video4');
+    var hls4 = new Hls();
+    hls4.loadSource('https://c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8');
+    hls4.attachMedia(video4);
+    hls4.on(Hls.Events.MANIFEST_PARSED,function() {
+      video4.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video4.canPlayType('application/vnd.apple.mpegurl')) {
+    video4.src = 'https://c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8';
+    video4.addEventListener('canplay',function() {
+      video4.play();
+    });
+  }
+
+
+  //ANT1
+  if(Hls.isSupported()) {
+    var video5 = document.getElementById('video5');
+    var hls5 = new Hls();
+    hls5.loadSource('https://antennaamdnoenc.akamaized.net/ant1_akamai/abr/playlist.m3u8');
+    hls5.attachMedia(video5);
+    hls5.on(Hls.Events.MANIFEST_PARSED,function() {
+      video5.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video5.canPlayType('application/vnd.apple.mpegurl')) {
+    video5.src = 'https://antennaamdnoenc.akamaized.net/ant1_akamai/abr/playlist.m3u8';
+    video5.addEventListener('canplay',function() {
+      video5.play();
+    });
+  }
+
+  //ALPHA
+  if(Hls.isSupported()) {
+    var video6 = document.getElementById('video6');
+    var hls6 = new Hls();
+    hls6.loadSource('https://alphatvlive.siliconweb.com/1/Y2Rsd1lUcUVoajcv/UVdCN25h/hls/f1yvzq9v/2728/chunklist.m3u8');
+    hls6.attachMedia(video6);
+    hls6.on(Hls.Events.MANIFEST_PARSED,function() {
+      video6.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video6.canPlayType('application/vnd.apple.mpegurl')) {
+    video6.src = 'https://alphatvlive.siliconweb.com/1/Y2Rsd1lUcUVoajcv/UVdCN25h/hls/f1yvzq9v/2728/chunklist.m3u8';
+    video6.addEventListener('canplay',function() {
+      video6.play();
+    });
+  }
+
+  //STAR
+  if(Hls.isSupported()) {
+    var video7 = document.getElementById('video7');
+    var hls7 = new Hls();
+    hls7.loadSource('https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8');
+    hls7.attachMedia(video7);
+    hls7.on(Hls.Events.MANIFEST_PARSED,function() {
+      video7.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video7.canPlayType('application/vnd.apple.mpegurl')) {
+    video7.src = 'https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8';
+    video7.addEventListener('canplay',function() {
+      video7.play();
+    });
+  }
+
+
+  //SKAI
+  if(Hls.isSupported()) {
+    var video8 = document.getElementById('video8');
+    var hls8 = new Hls();
+    hls8.loadSource('https://skai-live-gr-cy.siliconweb.com/media/cambria4/index_bitrate2000K.m3u8');
+    hls8.attachMedia(video8);
+    hls8.on(Hls.Events.MANIFEST_PARSED,function() {
+      video8.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video8.canPlayType('application/vnd.apple.mpegurl')) {
+    video8.src = 'https://skai-live-gr-cy.siliconweb.com/media/cambria4/index_bitrate2000K.m3u8';
+    video8.addEventListener('canplay',function() {
+      video8.play();
+    });
+  }
+
+  //OPEN
+  if(Hls.isSupported()) {
+    var video9 = document.getElementById('video9');
+    var hls9 = new Hls();
+    hls9.loadSource('https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8');
+    hls9.attachMedia(video9);
+    hls9.on(Hls.Events.MANIFEST_PARSED,function() {
+      video9.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video9.canPlayType('application/vnd.apple.mpegurl')) {
+    video9.src = 'https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8';
+    video9.addEventListener('canplay',function() {
+      video9.play();
+    });
+  }
+
+  //MTV
+  if(Hls.isSupported()) {
+    var video10 = document.getElementById('video10');
+    var hls10 = new Hls();
+    hls10.loadSource('https://antennaamdnoenc.akamaized.net/maktv_akamai/abr/playlist.m3u8');
+    hls10.attachMedia(video10);
+    hls10.on(Hls.Events.MANIFEST_PARSED,function() {
+      video10.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+  else if (video10.canPlayType('application/vnd.apple.mpegurl')) {
+    video10.src = 'https://antennaamdnoenc.akamaized.net/maktv_akamai/abr/playlist.m3u8';
+    video10.addEventListener('canplay',function() {
+      video10.play();
+    });
+  }
+</script>
+      
+  </body>
 </html>
