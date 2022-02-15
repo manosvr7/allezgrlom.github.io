@@ -52,6 +52,7 @@
 
 		.btn2 {
 			color: #ffffff;
+      text-decoration: none;
 		}
 
 		.btn2:hover {
@@ -103,9 +104,34 @@
 			text-align: center;
 		}
 
-        footer {
-            background-color: #343a40;
-        }
+    footer {
+        background-color: #343a40;
+    }
+    .announcements { 
+      border-style: solid; 
+      border-color: #343a40; 
+      padding: 10px; 
+      margin-top: 20px;
+      border-radius: 5px;
+      background-color: #343a40;
+    }
+			.announcements > h3 { color:white; }
+			.announcements > h3 > span { color:white;  }
+			.announcements > h3 > a { color:#343a40;  }
+
+      .buttons { 
+        width: 50%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        background-color: white; 
+      }
+      .buttons button { 
+        width: 100%;
+        background-color: #343a40;
+        color: white;
+        border: none;
+        border-radius: 2px;
+      }
     </style>
 
     
@@ -269,50 +295,54 @@
   </div>
   <div id="matches" class="container">
     <center> 
+      <div class="announcements" >
+        <h3>
+            <p>Link 11-12-13-14-15-16-17-18 Παρί Σεν Ζερμέν - Ρεάλ Μαδρίτης</p> 
+            <p>Link 19-2-3 Σπόρτινγκ Λισαβόνας - Μάντσεστερ Σίτι</p>
+            <p>Link 4 Μάντσεστερ Γιουνάιτεντ - Μπράιτον</p>
+        </h3> 
+      </div>
         <div id="content">
             <!-- <iframe class="player" id="streamIframe" src='https://embedstream.me/the-golazo-show-stream-1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url'></iframe> -->
             <iframe class="player" id="streamIframe" name="streamframe" width='100%' height='400' allowfullscreen='yes' marginwidth='0' marginheight='0' scrolling='no' src='https://greeklivechannels.cyou/link1.html' frameborder='0' allow='encrypted-media'></iframe>
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Αγώνες</th>
-                            <th>Ώρα</th>
-                            <th>Links</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <!-- <tr>
-                        <td><a class="btn1" href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>ΑΕΚ - Παναιτωλικός</a></td>
-                        <td class="btn1">17:15</td>
-                        <td><a class="btn1" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn1" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn1" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn1" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5, </a><a class="btn1" href='https://greeklivechannels.cyou/link6.html' target='streamframe' rel='nofollow'>6, </a><a class="btn1" href='https://greeklivechannels.cyou/link7.html' target='streamframe' rel='nofollow'>7, </a><a class="btn1" href='https://greeklivechannels.cyou/link8.html' target='streamframe' rel='nofollow'>8, </a><a class="btn1" href='https://greeklivechannels.cyou/link9.html' target='streamframe' rel='nofollow'>9, </a><a class="btn1" href='https://greeklivechannels.cyou/link11.html' target='streamframe' rel='nofollow'>10, </a><a class="btn1" href='https://greeklivechannels.cyou/link12.html' target='streamframe' rel='nofollow'>11, </a><a class="btn1" href='https://greeklivechannels.cyou/link13.html' target='streamframe' rel='nofollow'>12, </a><a class="btn1" href='https://greeklivechannels.cyou/link14.html' target='streamframe' rel='nofollow'>13</a></td>
-                      </tr>
-					  <tr>
-						<td><a class="btn1" href='https://greeklivechannels.cyou/link11.html' target='streamframe' rel='nofollow'>Μακάμπι Τελ Αβίβ - Ολυμπιακός</a></td>
-						<td class="btn1">21:05</td>
-						<td><a class="btn1" href='https://greeklivechannels.cyou/link12.html' target='streamframe' rel='nofollow'>2, </a><a class="btn1" href='https://greeklivechannels.cyou/link13.html' target='streamframe' rel='nofollow'>3, </a><a class="btn1" href='https://greeklivechannels.cyou/link14.html' target='streamframe' rel='nofollow'>4, </a><a class="btn1" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5</a></td>
-					  </tr>
-					  <tr>
-						  <td><a class="btn2" href='https://greeklivechannels.cyou/link9.html' target='streamframe' rel='nofollow'>Άρης - ΠΑΣ Λαμία</a></td>
-						  <td class="btn2">21:30</td>
-						  <td><a class="btn2" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn2" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn2" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn2" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5, </a><a class="btn2" href='https://greeklivechannels.cyou/link6.html' target='streamframe' rel='nofollow'>6, </a><a class="btn2" href='https://greeklivechannels.cyou/link7.html' target='streamframe' rel='nofollow'>7, </a><a class="btn2" href='https://greeklivechannels.cyou/link8.html' target='streamframe' rel='nofollow'>8</a></td>
-					  </tr>
-                      <tr>
-                        <td><a class="btn1" href='https://greeklivechannels.cyou/link16.html' target='streamframe' rel='nofollow'>Αρσεναλ - Λίβερπουλ</a></td>
-                        <td class="btn1">21:45</td>
-                        <td><a class="btn1" href='https://greeklivechannels.cyou/link15.html' target='streamframe' rel='nofollow'>2, </a><a class="btn1" href='https://greeklivechannels.cyou/link17.html' target='streamframe' rel='nofollow'>3</a></td>
-                      </tr>
-                      <tr>
-                        <td><a class="btn2" href='https://greeklivechannels.cyou/link18.html' target='streamframe' rel='nofollow'>Μπιλμπάο - Μπαρτσελόνα</a></td>
-                        <td class="btn2">22:30</td>
-                        <td><a class="btn2" href='https://greeklivechannels.cyou/link19.html' target='streamframe' rel='nofollow'>2</a></td>
-                      </tr> -->
-                      <tr>
-                        <td><a class="btn1" href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>ΠΑΟΚ - Ολυμπιακός</a></td>
-                        <td class="btn1">19:30</td>
-                        <td><a class="btn1" href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>2, </a><a class="btn1" href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>3, </a><a class="btn1" href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>4, </a><a class="btn1" href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>5, </a><a class="btn1" href='https://greeklivechannels.cyou/link6.html' target='streamframe' rel='nofollow'>6, </a><a class="btn1" href='https://greeklivechannels.cyou/link7.html' target='streamframe' rel='nofollow'>7, </a><a class="btn1" href='https://greeklivechannels.cyou/link8.html' target='streamframe' rel='nofollow'>8</a><a class="btn1" href='https://greeklivechannels.cyou/link9.html' target='streamframe' rel='nofollow'>9, </a><a class="btn1" href='https://greeklivechannels.cyou/link11.html' target='streamframe' rel='nofollow'>10, </a><a class="btn1" href='https://greeklivechannels.cyou/link12.html' target='streamframe' rel='nofollow'>11, </a><a class="btn1" href='https://greeklivechannels.cyou/link13.html' target='streamframe' rel='nofollow'>12, </a><a class="btn1" href='https://greeklivechannels.cyou/link14.html' target='streamframe' rel='nofollow'>13</a></td>
-                      </tr>
-                    </tbody>
-                </table>
+            
+            <table class=buttons>
+              <tr>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link10.html' target='streamframe' rel='nofollow'>Link 1</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link11.html' target='streamframe' rel='nofollow'>Link 2</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link12.html' target='streamframe' rel='nofollow'>Link 3</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link13.html' target='streamframe' rel='nofollow'>Link 4</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link14.html' target='streamframe' rel='nofollow'>Link 5</a></button></td>
+              </tr>
+              <tr>
+                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link15.html' target='streamframe' rel='nofollow'>Link 6</a></button></td>
+                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link16.html' target='streamframe' rel='nofollow'>Link 7</a></button></td>
+                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link17.html' target='streamframe' rel='nofollow'>Link 8</a></button></td>
+                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link18.html' target='streamframe' rel='nofollow'>Link 9</a></button></td>
+                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link19.html' target='streamframe' rel='nofollow'>Link 10</a></button></td>
+              </tr>
+              <tr>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>Link 11</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>Link 12</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>Link 13</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>Link 14</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>Link 15</a></button></td>
+              </tr>
+              <tr>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link6.html' target='streamframe' rel='nofollow'>Link 16</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link7.html' target='streamframe' rel='nofollow'>Link 17</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link8.html' target='streamframe' rel='nofollow'>Link 18</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link9.html' target='streamframe' rel='nofollow'>Link 19</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn7.html' target='streamframe' rel='nofollow'>Link 20</a></button></td>
+              </tr>
+              <tr>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn9.html' target='streamframe' rel='nofollow'>Link 21</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn8.html' target='streamframe' rel='nofollow'>Link 22</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn10.html' target='streamframe' rel='nofollow'>Link 23</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn11.html' target='streamframe' rel='nofollow'>Link 24</a></button></td>
+                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn12.html' target='streamframe' rel='nofollow'>Link 25</a></button></td>
+              </tr>
+            </table>
         </div>
     </center>
  </div>
