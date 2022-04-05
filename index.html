@@ -13,19 +13,16 @@
 
     <link href="https://cdn.greeklivechannels.cyou/css/font-awesome.min.css" rel="stylesheet">		
     <!-- <link href="https://cdn.greeklivechannels.cyou/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.greeklivechannels.cyou/css/style.css" rel="stylesheet"> -->
-
-
+	  <link href="https://cdn.greeklivechannels.cyou/css/style.css" rel="stylesheet"> -->
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
-
-
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+  
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -52,7 +49,7 @@
 
 		.btn2 {
 			color: #ffffff;
-      text-decoration: none;
+      		text-decoration: none;
 		}
 
 		.btn2:hover {
@@ -60,49 +57,15 @@
 			text-decoration: underline;
 		}
 
-        .player {
-            margin-top:15px;
-            margin-left: 0em;
-            margin-right: 0em;
-            height: 50em;
-        }
+    .player {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 36.5em;
+    }
 
-		.styled-table {
-           border-collapse: collapse;
-    	   margin: 0px 0;
-    	   font-size: 0.9em;
-    	   font-family: sans-serif;
-    	   min-width: 400px;
-    	   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-		   margin-left: -0.6em;
-   		}
-		
-		.styled-table thead tr {
-    	   background-color: #343a40;
-    	   color: #ffffff;
-    	   text-align: left;
-		}
-
-		.styled-table th,
-		.styled-table td {
-    	   padding: 12px 15px;
-		}
-
-		.styled-table tbody tr {
-    	   border-bottom: 1px solid #343a40;
-	    }
-
-		.styled-table tbody tr:nth-of-type(even) {
-    	   background-color: #343a40;
-		}
-
-		.styled-table tbody tr:last-of-type {
-    	   border-bottom: 2px solid #343a40;
-		}
-
-		#links {
-			text-align: center;
-		}
+    .player-poster {
+      height: 100%;
+    }
 
     footer {
         background-color: #343a40;
@@ -119,25 +82,44 @@
 			.announcements > h3 > span { color:white;  }
 			.announcements > h3 > a { color:#343a40;  }
 
-      .buttons { 
-        width: 60%;
-        table-layout: fixed;
-        border-collapse: collapse;
-        background-color: white; 
-      }
-      .buttons button { 
-        width: 100%;
-        background-color: #343a40;
-        color: white;
-        border: none;
-        border-radius: 2px;
-      }
-    </style>
 
-    
+
+	  .buttons { 
+				
+				margin-bottom:10px;
+			
+			 }
+			
+		.button1 , .button2 , .button3 { 
+			background-color: black;
+			width: 100px;
+			padding: 5px;
+			border-radius: 25px;
+			display:inline-block;
+			margin-bottom: 5px;
+			}
+			
+		.btn > a { color:white; text-decoration:none; }
+
+		/* .player { margin-bottom:20px; } */
+
+		.player > iframe { border-color:black; }
+
+		.title {
+			 margin: 20px;
+			font-size: 32px;
+			font-weight: bold; }
+			
+		.announcements 
+		{    
+			font-weight: bold;
+			font-size: 20px;
+			color: white; 
+		} 
+    </style>
   </head>
-  <body>
-    
+  
+<body>  
 <header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
@@ -293,58 +275,68 @@
       </div>
     </div>
   </div>
+  
   <div id="matches" class="container">
-    <center> 
-      <div class="announcements" >
-        <h3>
-            <p>Link 1-2-3-4-5-6 Παναιτωλικός - Παναθηναϊκός</p> 
-            <p>Link 11-12-13-14 Ιωνικός - ΟΦΗ / Ατρόμητος - Αστέρας Τρίπολης / Ρεάλ Μαδρίτης - Αλαβές</p>
-            <p>Link 15-16-17-18 Γουέστ Χαμ - Νιούκαστλ / Λίβερπουλ - Νόριτς / Μάντσεστερ Σίτι - Τότεναμ / Ναντ - Παρί Σεν Ζερμέν</p>
-        </h3> 
-      </div>
-        <div id="content">
-            <!-- <iframe class="player" id="streamIframe" src='https://embedstream.me/the-golazo-show-stream-1' width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url'></iframe> -->
-            <iframe class="player" id="streamIframe" name="streamframe" width='100%' height='400' allowfullscreen='yes' marginwidth='0' marginheight='0' scrolling='no' src='https://greeklivechannels.cyou/link1.html' frameborder='0' allow='encrypted-media'></iframe>
-            
-            <table class=buttons>
-              <tr>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link10.html' target='streamframe' rel='nofollow'>Link 1</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link11.html' target='streamframe' rel='nofollow'>Link 2</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link12.html' target='streamframe' rel='nofollow'>Link 3</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link13.html' target='streamframe' rel='nofollow'>Link 4</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link14.html' target='streamframe' rel='nofollow'>Link 5</a></button></td>
-              </tr>
-              <tr>
-                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link15.html' target='streamframe' rel='nofollow'>Link 6</a></button></td>
-                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link16.html' target='streamframe' rel='nofollow'>Link 7</a></button></td>
-                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link17.html' target='streamframe' rel='nofollow'>Link 8</a></button></td>
-                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link18.html' target='streamframe' rel='nofollow'>Link 9</a></button></td>
-                 <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link19.html' target='streamframe' rel='nofollow'>Link 10</a></button></td>
-              </tr>
-              <tr>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link1.html' target='streamframe' rel='nofollow'>Link 11</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link2.html' target='streamframe' rel='nofollow'>Link 12</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link3.html' target='streamframe' rel='nofollow'>Link 13</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link4.html' target='streamframe' rel='nofollow'>Link 14</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link5.html' target='streamframe' rel='nofollow'>Link 15</a></button></td>
-              </tr>
-              <tr>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link6.html' target='streamframe' rel='nofollow'>Link 16</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link7.html' target='streamframe' rel='nofollow'>Link 17</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link8.html' target='streamframe' rel='nofollow'>Link 18</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/link9.html' target='streamframe' rel='nofollow'>Link 19</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn7.html' target='streamframe' rel='nofollow'>Link 20</a></button></td>
-              </tr>
-              <tr>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn9.html' target='streamframe' rel='nofollow'>Link 21</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn8.html' target='streamframe' rel='nofollow'>Link 22</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn10.html' target='streamframe' rel='nofollow'>Link 23</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn11.html' target='streamframe' rel='nofollow'>Link 24</a></button></td>
-                <td><button type="button"><a class=btn2 href='https://greeklivechannels.cyou/cn12.html' target='streamframe' rel='nofollow'>Link 25</a></button></td>
-              </tr>
-            </table>
-        </div>
-    </center>
+    <center>
+		<main>
+			<div class="announcements" > 
+				<p> Link 10-11-12-13-14-15-16 Μάντσεστερ Σίτι - Ατλέτικο Μαδρίτης </p>
+				<p> Link 17-18-19-21 Μπενφίκα - Λίβερπουλ </p>
+			</div>
+			
+			<div class="streams1">
+	
+				<div>
+	
+					<iframe class="player" allowfullscreen="true" src="https://neostreamsgr.ml/stream10.php" height="70%" width="80%" name="streams" ></iframe>
+				
+				</div>
+	
+	
+				<div class="buttons">
+	
+					<div class="button1 btn"> <a href="https://neostreamsgr.ml/stream1.php" target="streams">LINK #1</a> </div>
+					<div class="button2 btn"> <a href="https://neostreamsgr.ml/stream2.php" target="streams">LINK #2</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream3.php" target="streams">LINK #3</a> </div>
+					<div class="button1 btn"> <a href="https://neostreamsgr.ml/stream10.php" target="streams">LINK #10</a> </div>
+					<div class="button2 btn"> <a href="https://neostreamsgr.ml/stream11.php" target="streams">LINK #11</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream12.php" target="streams">LINK #12</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream13.php" target="streams">LINK #13</a> </div>
+					<div class="button1 btn"> <a href="https://neostreamsgr.ml/stream14.php" target="streams">LINK #14</a> </div>
+					<div class="button2 btn"> <a href="https://neostreamsgr.ml/stream15.php" target="streams">LINK #15</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream16.php" target="streams">LINK #16</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream17.php" target="streams">LINK #17</a> </div>
+					<div class="button2 btn"> <a href="https://neostreamsgr.ml/stream18.php" target="streams">LINK #18</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream19.php" target="streams">LINK #19</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream20.php" target="streams">LINK #20</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream21.php" target="streams">LINK #21</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream22.php" target="streams">LINK #22</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream23.php" target="streams">LINK #23</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream24.php" target="streams">LINK #24</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream25.php" target="streams">LINK #25</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream26.php" target="streams">LINK #26</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream27.php" target="streams">LINK #27</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream28.php" target="streams">LINK #28</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream29.php" target="streams">LINK #29</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/stream30.php" target="streams">LINK #30</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/cn1.php" target="streams">CN #1</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/cn2.php" target="streams">CN #2</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/open.html" target="streams">OPEN</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/mega.html" target="streams">MEGA</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/ant1.html" target="streams">ANT1</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/makedonia.html" target="streams">MAKEDONIA</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/ertsports.html" target="streams">E-SPORTS</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/ert1.html" target="streams">ERT 1</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/ert2.html" target="streams">ERT 2</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/ert3.html" target="streams">ERT 3</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/skai.html" target="streams">SKAI TV</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/alpha.html" target="streams">ALPHA TV</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/star.html" target="streams">STAR TV</a> </div>
+					<div class="button3 btn"> <a href="https://neostreamsgr.ml/one.html" target="streams">ONE TV</a> </div>
+				</div>
+			</div>
+		</main>
+	</center>
  </div>
 </main>
 <br>
@@ -369,7 +361,7 @@
     hls.loadSource('http://ert-live-bcbs15228.siliconweb.com/media/ert_1/ert_1_3Mbps.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
+    video.play();
   });
  }
  // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
@@ -378,7 +370,7 @@
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
     video.src = 'http://ert-live-bcbs15228.siliconweb.com/media/ert_1/ert_1_3Mbps.m3u8';
     video.addEventListener('canplay',function() {
-      video.play();
+    video.play();
     });
   }
 
@@ -389,7 +381,7 @@
     hls2.loadSource('http://ert-live-bcbs15228.siliconweb.com/media/ert_2/ert_2_3Mbps.m3u8');
     hls2.attachMedia(video2);
     hls2.on(Hls.Events.MANIFEST_PARSED,function() {
-      video2.play();
+    video2.play();
   });
  }
  // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
@@ -398,7 +390,7 @@
   else if (video2.canPlayType('application/vnd.apple.mpegurl')) {
     video2.src = 'http://ert-live-bcbs15228.siliconweb.com/media/ert_2/ert_2_3Mbps.m3u8';
     video2.addEventListener('canplay',function() {
-      video2.play();
+    video2.play();
     });
   }
 
@@ -409,7 +401,7 @@
     hls3.loadSource('http://ert-live-bcbs15228.siliconweb.com/media/ert_3/ert_3_2Mbps.m3u8');
     hls3.attachMedia(video3);
     hls3.on(Hls.Events.MANIFEST_PARSED,function() {
-      video3.play();
+    video3.play();
   });
  }
  // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
@@ -418,7 +410,7 @@
   else if (video3.canPlayType('application/vnd.apple.mpegurl')) {
     video3.src = 'http://ert-live-bcbs15228.siliconweb.com/media/ert_3/ert_3_2Mbps.m3u8';
     video3.addEventListener('canplay',function() {
-      video3.play();
+    video3.play();
     });
   }
 
@@ -564,6 +556,43 @@
     });
   }
 </script>
-      
-  </body>
+
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/5f5f41ff4704467e89eebe29/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+</script>
+
+<script type="application/javascript">
+	(function() {
+
+	//version 1.0.0
+
+	var adConfig = {
+		"ads_host": "a.exdynsrv.com",
+		"syndication_host": "syndication.exdynsrv.com",
+		"idzone": 4641948,
+		"popup_fallback": false,
+		"popup_force": true,
+		"chrome_enabled": true,
+		"new_tab": true,
+		"frequency_period": 5,
+		"frequency_count": 3,
+		"trigger_method": 3,
+		"trigger_class": "",
+		"only_inline": false,
+		"t_venor": false
+	};
+
+	window.document.querySelectorAll||(document.querySelectorAll=document.body.querySelectorAll=Object.querySelectorAll=function(o,e,t,i,n){var r=document,c=r.createStyleSheet();for(n=r.all,e=[],t=(o=o.replace(/\[for\b/gi,"[htmlFor").split(",")).length;t--;){for(c.addRule(o[t],"k:v"),i=n.length;i--;)n[i].currentStyle.k&&e.push(n[i]);c.removeRule(0)}return e});var popMagic={version:1,cookie_name:"",url:"",config:{},open_count:0,top:null,browser:null,venor_loaded:!1,venor:!1,configTpl:{ads_host:"",syndication_host:"",idzone:"",frequency_period:720,frequency_count:1,trigger_method:1,trigger_class:"",popup_force:!1,popup_fallback:!1,chrome_enabled:!0,new_tab:!1,cat:"",tags:"",el:"",sub:"",sub2:"",sub3:"",only_inline:!1,t_venor:!1,cookieconsent:!0},init:function(o){if(void 0!==o.idzone&&o.idzone){for(var e in this.configTpl)this.configTpl.hasOwnProperty(e)&&(void 0!==o[e]?this.config[e]=o[e]:this.config[e]=this.configTpl[e]);void 0!==this.config.idzone&&""!==this.config.idzone&&(!0!==this.config.only_inline&&this.loadHosted(),this.addEventToElement(window,"load",this.preparePop))}},getCountFromCookie:function(){if(!this.config.cookieconsent)return 0;var o=popMagic.getCookie(popMagic.cookie_name),e=void 0===o?0:parseInt(o);return isNaN(e)&&(e=0),e},shouldShow:function(){if(popMagic.open_count>=popMagic.config.frequency_count)return!1;var o=popMagic.getCountFromCookie();return popMagic.open_count=o,!(o>=popMagic.config.frequency_count)},venorShouldShow:function(){return!popMagic.config.t_venor||popMagic.venor_loaded&&"0"===popMagic.venor},setAsOpened:function(){var o=1;o=0!==popMagic.open_count?popMagic.open_count+1:popMagic.getCountFromCookie()+1,popMagic.config.cookieconsent&&popMagic.setCookie(popMagic.cookie_name,o,popMagic.config.frequency_period)},loadHosted:function(){var o=document.createElement("script");for(var e in o.type="application/javascript",o.async=!0,o.src="//"+this.config.ads_host+"/popunder1000.js",o.id="popmagicldr",this.config)this.config.hasOwnProperty(e)&&"ads_host"!==e&&"syndication_host"!==e&&o.setAttribute("data-exo-"+e,this.config[e]);var t=document.getElementsByTagName("body").item(0);t.firstChild?t.insertBefore(o,t.firstChild):t.appendChild(o)},preparePop:function(){if("object"!=typeof exoJsPop101||!exoJsPop101.hasOwnProperty("add")){if(popMagic.top=self,popMagic.top!==self)try{top.document.location.toString()&&(popMagic.top=top)}catch(o){}if(popMagic.cookie_name="zone-cap-"+popMagic.config.idzone,popMagic.config.t_venor&&popMagic.shouldShow()){var o=new XMLHttpRequest;o.onreadystatechange=function(){o.readyState==XMLHttpRequest.DONE&&(popMagic.venor_loaded=!0,200==o.status&&(popMagic.venor=o.responseText))};var e="https:"!==document.location.protocol&&"http:"!==document.location.protocol?"https:":document.location.protocol;o.open("GET",e+"//"+popMagic.config.syndication_host+"/venor.php",!0);try{o.send()}catch(o){popMagic.venor_loaded=!0}}if(popMagic.buildUrl(),popMagic.browser=popMagic.browserDetector.detectBrowser(navigator.userAgent),popMagic.config.chrome_enabled||"chrome"!==popMagic.browser.name&&"crios"!==popMagic.browser.name){var t=popMagic.getPopMethod(popMagic.browser);popMagic.addEvent("click",t)}}},getPopMethod:function(o){return popMagic.config.popup_force?popMagic.methods.popup:popMagic.config.popup_fallback&&"chrome"===o.name&&o.version>=68&&!o.isMobile?popMagic.methods.popup:o.isMobile?popMagic.methods.default:"chrome"===o.name?popMagic.methods.chromeTab:popMagic.methods.default},buildUrl:function(){var o="https:"!==document.location.protocol&&"http:"!==document.location.protocol?"https:":document.location.protocol,e=top===self?document.URL:document.referrer,t={type:"inline",name:"popMagic",ver:this.version};this.url=o+"//"+this.config.syndication_host+"/splash.php?cat="+this.config.cat+"&idzone="+this.config.idzone+"&type=8&p="+encodeURIComponent(e)+"&sub="+this.config.sub+(""!==this.config.sub2?"&sub2="+this.config.sub2:"")+(""!==this.config.sub3?"&sub3="+this.config.sub3:"")+"&block=1&el="+this.config.el+"&tags="+this.config.tags+"&cookieconsent="+this.config.cookieconsent+"&scr_info="+function(o){var e=o.type+"|"+o.name+"|"+o.ver;return encodeURIComponent(btoa(e))}(t)},addEventToElement:function(o,e,t){o.addEventListener?o.addEventListener(e,t,!1):o.attachEvent?(o["e"+e+t]=t,o[e+t]=function(){o["e"+e+t](window.event)},o.attachEvent("on"+e,o[e+t])):o["on"+e]=o["e"+e+t]},addEvent:function(o,e){var t;if("3"!=popMagic.config.trigger_method)if("2"!=popMagic.config.trigger_method||""==popMagic.config.trigger_method)popMagic.addEventToElement(document,o,e);else{var i,n=[];i=-1===popMagic.config.trigger_class.indexOf(",")?popMagic.config.trigger_class.split(" "):popMagic.config.trigger_class.replace(/\s/g,"").split(",");for(var r=0;r<i.length;r++)""!==i[r]&&n.push("."+i[r]);for(t=document.querySelectorAll(n.join(", ")),r=0;r<t.length;r++)popMagic.addEventToElement(t[r],o,e)}else for(t=document.querySelectorAll("a"),r=0;r<t.length;r++)popMagic.addEventToElement(t[r],o,e)},setCookie:function(o,e,t){if(!this.config.cookieconsent)return!1;t=parseInt(t,10);var i=new Date;i.setMinutes(i.getMinutes()+parseInt(t));var n=encodeURIComponent(e)+"; expires="+i.toUTCString()+"; path=/";document.cookie=o+"="+n},getCookie:function(o){if(!this.config.cookieconsent)return!1;var e,t,i,n=document.cookie.split(";");for(e=0;e<n.length;e++)if(t=n[e].substr(0,n[e].indexOf("=")),i=n[e].substr(n[e].indexOf("=")+1),(t=t.replace(/^\s+|\s+$/g,""))===o)return decodeURIComponent(i)},randStr:function(o,e){for(var t="",i=e||"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",n=0;n<o;n++)t+=i.charAt(Math.floor(Math.random()*i.length));return t},isValidUserEvent:function(o){return!!("isTrusted"in o&&o.isTrusted&&"ie"!==popMagic.browser.name&&"safari"!==popMagic.browser.name)||0!=o.screenX&&0!=o.screenY},isValidHref:function(o){if(void 0===o||""==o)return!1;return!/\s?javascript\s?:/i.test(o)},findLinkToOpen:function(o){var e=o,t=!1;try{for(var i=0;i<20&&!e.getAttribute("href")&&e!==document&&"html"!==e.nodeName.toLowerCase();)e=e.parentNode,i++;var n=e.getAttribute("target");n&&-1!==n.indexOf("_blank")||(t=e.getAttribute("href"))}catch(o){}return popMagic.isValidHref(t)||(t=!1),t||window.location.href},getPuId:function(){return"ok_"+Math.floor(89999999*Math.random()+1e7)},browserDetector:{browserDefinitions:[["firefox",/Firefox\/([0-9.]+)(?:\s|$)/],["opera",/Opera\/([0-9.]+)(?:\s|$)/],["opera",/OPR\/([0-9.]+)(:?\s|$)$/],["edge",/Edg(?:e|)\/([0-9._]+)/],["ie",/Trident\/7\.0.*rv:([0-9.]+)\).*Gecko$/],["ie",/MSIE\s([0-9.]+);.*Trident\/[4-7].0/],["ie",/MSIE\s(7\.0)/],["safari",/Version\/([0-9._]+).*Safari/],["chrome",/(?!Chrom.*Edg(?:e|))Chrom(?:e|ium)\/([0-9.]+)(:?\s|$)/],["chrome",/(?!Chrom.*OPR)Chrom(?:e|ium)\/([0-9.]+)(:?\s|$)/],["bb10",/BB10;\sTouch.*Version\/([0-9.]+)/],["android",/Android\s([0-9.]+)/],["ios",/Version\/([0-9._]+).*Mobile.*Safari.*/],["yandexbrowser",/YaBrowser\/([0-9._]+)/],["crios",/CriOS\/([0-9.]+)(:?\s|$)/]],detectBrowser:function(o){var e=o.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WebOS|Windows Phone/i);for(var t in this.browserDefinitions){var i=this.browserDefinitions[t];if(i[1].test(o)){var n=i[1].exec(o),r=n&&n[1].split(/[._]/).slice(0,3),c=Array.prototype.slice.call(r,1).join("")||"0";return r&&r.length<3&&Array.prototype.push.apply(r,1===r.length?[0,0]:[0]),{name:i[0],version:r.join("."),versionNumber:parseFloat(r[0]+"."+c),isMobile:e}}}return{name:"other",version:"1.0",versionNumber:1,isMobile:e}}},methods:{default:function(o){if(!popMagic.shouldShow()||!popMagic.venorShouldShow()||!popMagic.isValidUserEvent(o))return!0;var e=o.target||o.srcElement,t=popMagic.findLinkToOpen(e);return window.open(t,"_blank"),popMagic.setAsOpened(),popMagic.top.document.location=popMagic.url,void 0!==o.preventDefault&&(o.preventDefault(),o.stopPropagation()),!0},chromeTab:function(o){if(!popMagic.shouldShow()||!popMagic.venorShouldShow()||!popMagic.isValidUserEvent(o))return!0;if(void 0===o.preventDefault)return!0;o.preventDefault(),o.stopPropagation();var e=top.window.document.createElement("a"),t=o.target||o.srcElement;e.href=popMagic.findLinkToOpen(t),document.getElementsByTagName("body")[0].appendChild(e);var i=new MouseEvent("click",{bubbles:!0,cancelable:!0,view:window,screenX:0,screenY:0,clientX:0,clientY:0,ctrlKey:!0,altKey:!1,shiftKey:!1,metaKey:!0,button:0});i.preventDefault=void 0,e.dispatchEvent(i),e.parentNode.removeChild(e),window.open(popMagic.url,"_self"),popMagic.setAsOpened()},popup:function(o){if(!popMagic.shouldShow()||!popMagic.venorShouldShow()||!popMagic.isValidUserEvent(o))return!0;var e="";if(popMagic.config.popup_fallback&&!popMagic.config.popup_force){var t=Math.max(Math.round(.8*window.innerHeight),300);e="menubar=1,resizable=1,width="+Math.max(Math.round(.7*window.innerWidth),300)+",height="+t+",top="+(window.screenY+100)+",left="+(window.screenX+100)}var i=document.location.href,n=window.open(i,popMagic.getPuId(),e);setTimeout(function(){n.location.href=popMagic.url},200),popMagic.setAsOpened(),void 0!==o.preventDefault&&(o.preventDefault(),o.stopPropagation())}}};    popMagic.init(adConfig);
+	})();
+</script>
+
+</body>
 </html>
